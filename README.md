@@ -1,123 +1,117 @@
-
-# CFD Python
-
-> Please cite as: Barba, Lorena A., and Forsyth, Gilbert F. (2018). CFD Python: the 12 steps to Navier-Stokes equations. _Journal of Open Source Education_, **1**(9), 21, https://doi.org/10.21105/jose.00021
-
-[![DOI](https://jose.theoj.org/papers/10.21105/jose.00021/status.svg)](https://doi.org/10.21105/jose.00021)
-
-**CFD Python**, a.k.a. the **12 steps to Navier-Stokes**, is a practical module for learning the foundations of Computational Fluid Dynamics (CFD) by coding solutions to the basic partial differential equations that describe the physics of fluid flow.
-The module was part of a course taught by [Prof. Lorena Barba](http://lorenabarba.com) between 2009 and 2013 in the Mechanical Engineering department at Boston University (Prof. Barba since moved to the George Washington University).
-
-The module assumes only basic programming knowledge (in any language) and some background in partial differential equations and fluid mechanics. The "steps" were inspired by ideas of Dr. Rio Yokota, who was a post-doc in Prof. Barba's lab until 2011, and the lessons were refined by Prof. Barba and her students over several semesters teaching the CFD course. 
-We wrote this set of Jupyter notebooks in 2013 to teach an intensive two-day course in Mendoza, Argentina.
-
-Guiding students through these steps (without skipping any!), they learn many valuable lessons. The incremental nature of the exercises means they get a sense of achievement at the end of each assignment, and they feel they are learning with low effort. As they progress, they naturally practice code re-use and they incrementally learn programming and plotting techniques. As they analyze their results, they learn about numerical diffusion, accuracy and convergence. 
-In about four weeks of a regularly scheduled course, they become moderately proficient programmers and are motivated to start discussing more theoretical matters.
-
-## How to use this module
-
-In a regular-session university course, students can complete the **CFD Python** lessons in 4 to 5 weeks. 
-As an intensive tutorial, the module can be completed in two or three full days, depending on the learner's prior experience. 
-The lessons can also be used for self study. 
-In all cases, learners should follow along the worked examples in each lesson by re-typing the code in a fresh Jupyter notebook, maybe taking original notes as they try things out. 
-
-Lessons
--------
-> Launch an interactive session with this module using the Binder service:
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/barbagroup/CFDPython/master)
-
-Steps 1–4 are in one spatial dimension. Steps 5–10 are in two dimensions (2D). Steps 11–12 solve the Navier-Stokes equation in 2D. Three "bonus" notebooks cover the CFL condition for numerical stability, array operations with NumPy, and defining functions in Python.
-
-* [Quick Python Intro](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/00_Quick_Python_Intro.ipynb)
-—For Python novices, this lesson introduces the numerical libraries (NumPy and Matplotlib), Python variables, use of whitespace, and slicing arrays.
-* [Step 1](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/01_Step_1.ipynb)
-—Linear convection with a step-function initial condition (IC) and appropriate boundary conditions (BCs).
-* [Step 2](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/02_Step_2.ipynb)
-—With the same IC/BCs, _nonlinear_ convection.
-* [CFL Condition](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/03_CFL_Condition.ipynb)
-—Exploring numerical stability and the Courant-Friedrichs-Lewy (CFL) condition.
-* [Step 3](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/04_Step_3.ipynb)
-—With the same IC/BCs, _diffusion_ only.
-* [Step 4](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/05_Step_4.ipynb)
-—Burgers’ equation, with a saw-tooth IC and periodic BCs (with an introduction to Sympy).
-* [Array Operations with NumPy](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/06_Array_Operations_with_NumPy.ipynb)
-* [Step 5](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/07_Step_5.ipynb)
-—Linear convection in 2D with a square-function IC and appropriate BCs.
-* [Step 6](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/08_Step_6.ipynb)
-—With the same IC/BCs, _nonlinear_ convection in 2D.
-* [Step 7](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/09_Step_7.ipynb)
-—With the same IC/BCs, _diffusion_ in 2D.
-* [Step 8](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/10_Step_8.ipynb)
-—Burgers’ equation in 2D
-* [Defining Functions in Python](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/11_Defining_Function_in_Python.ipynb)
-* [Step 9](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/12_Step_9.ipynb)
-—Laplace equation with zero IC and both Neumann and Dirichlet BCs.
-* [Step 10](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/13_Step_10.ipynb)
-—Poisson equation in 2D.
-* [Step 11](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/14_Step_11.ipynb)
-—Solves the Navier-Stokes equation for 2D cavity flow.
-* [Step 12](http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/15_Step_12.ipynb)
-—Solves the Navier-Stokes equation for 2D channel flow.
-
-
-
-
-## Dependencies
-
-To use these lessons, you need Python 3, and the standard stack of scientific Python: NumPy, Matplotlib, SciPy, Sympy. And of course, you need [Jupyter](http://jupyter.org)—an interactive computational environment that runs on a web browser.
-
-This mini-course is built as a set of [Jupyter notebooks](https://jupyter-notebook.readthedocs.org/en/latest/notebook.html) containing the written materials and worked-out solutions on Python code. To work with the material, we recommend that you start each lesson with a fresh new notebook, and follow along, typing each line of code (don't copy-and-paste!), and exploring by changing parameters and seeing what happens. 
-
-
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">差价合约Python</font></font></h1><a id="user-content-cfd-python" class="anchor" aria-label="永久链接：CFD Python" href="#cfd-python"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请引用：Barba, Lorena A. 和 Forsyth, Gilbert F. (2018)。 CFD Python：纳维-斯托克斯方程的 12 个步骤。</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源教育杂志</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> (9), 21，</font></font><a href="https://doi.org/10.21105/jose.00021" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://doi.org/10.21105/jose.00021</font></font></a></p>
+</blockquote>
+<p dir="auto"><a href="https://doi.org/10.21105/jose.00021" rel="nofollow"><img src="https://camo.githubusercontent.com/a4d0c191e11e0f71a683a956fd530ea82f20a0c3af5a35f2a00ff073700b61ee/68747470733a2f2f6a6f73652e7468656f6a2e6f72672f7061706572732f31302e32313130352f6a6f73652e30303032312f7374617475732e737667" alt="DOI" data-canonical-src="https://jose.theoj.org/papers/10.21105/jose.00021/status.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CFD Python</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，又</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">名纳维-斯托克斯的 12 个步骤</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，是一个实用模块，用于通过编码描述流体流动物理的基本偏微分方程的解来学习计算流体动力学 (CFD) 的基础。该模块是</font></font><a href="http://lorenabarba.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lorena Barba 教授</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">于 2009 年至 2013 年间在波士顿大学机械工程系教授的课程的一部分</font><font style="vertical-align: inherit;">（Barba 教授后来转到乔治华盛顿大学）。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该模块仅假设您具备基本的编程知识（任何语言）以及一些偏微分方程和流体力学背景。这些“步骤”的灵感来自于 Rio Yokota 博士的想法，Rio Yokota 博士在 2011 年之前一直是 Barba 教授实验室的博士后，并且 Barba 教授和她的学生在教授 CFD 课程的几个学期中对课程进行了完善。我们于 2013 年编写了这套 Jupyter 笔记本，用于在阿根廷门多萨教授为期两天的强化课程。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过指导学生完成这些步骤（不跳过任何步骤！），他们学到了许多宝贵的经验教训。练习的渐进性质意味着他们在每次作业结束时都会有一种成就感，并且他们觉得自己的学习毫不费力。随着他们的进步，他们自然会练习代码重用，并逐渐学习编程和绘图技术。当他们分析结果时，他们了解数值扩散、准确性和收敛性。在大约四个星期的定期课程中，他们成为中等熟练程度的程序员，并有动力开始讨论更多的理论问题。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用该模块</font></font></h2><a id="user-content-how-to-use-this-module" class="anchor" aria-label="永久链接：如何使用此模块" href="#how-to-use-this-module"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在常规大学课程中，学生可以在 4 到 5 周内完成</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CFD Python</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">课程。作为强化教程，该模块可以在两到三天内完成，具体取决于学习者之前的经验。这些课程也可以用于自学。在所有情况下，学习者都应该按照每节课中的工作示例，在新的 Jupyter 笔记本中重新输入代码，也许在尝试时记下原始笔记。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教训</font></font></h2><a id="user-content-lessons" class="anchor" aria-label="永久链接：教训" href="#lessons"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Binder 服务启动与此模块的交互式会话：
+</font></font><a href="https://mybinder.org/v2/gh/barbagroup/CFDPython/master" rel="nofollow"><img src="https://camo.githubusercontent.com/4e66027072f7aa2f6b53bb56e496d94879d3d8c3160145d6db1b1edb55096bd2/68747470733a2f2f6d7962696e6465722e6f72672f62616467652e737667" alt="活页夹" data-canonical-src="https://mybinder.org/badge.svg" style="max-width: 100%;"></a></p>
+</blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 1-4 位于一个空间维度。步骤 5-10 是二维 (2D) 的。步骤 11-12 求解二维纳维-斯托克斯方程。三个“奖励”笔记本涵盖了数值稳定性的 CFL 条件、N&ZeroWidthSpace;&ZeroWidthSpace;umPy 的数组操作以及 Python 中的定义函数。</font></font></p>
+<ul dir="auto">
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/00_Quick_Python_Intro.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速 Python 介绍</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+— 对于 Python 新手，本课程介绍数值库（NumPy 和 Matplotlib）、Python 变量、空格的使用和数组切片。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/01_Step_1.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 1</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+- 具有阶跃函数初始条件 (IC) 和适当边界条件 (BC) 的线性对流。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/02_Step_2.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 2</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— 使用相同的 IC/BC，</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">非线性</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对流。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/03_CFL_Condition.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CFL 条件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+— 探索数值稳定性和 Courant-Friedrichs-Lewy (CFL) 条件。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/04_Step_3.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 3</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— 使用相同的 IC/BC，</font><font style="vertical-align: inherit;">仅</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩散。</font></font></em><font style="vertical-align: inherit;"></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/05_Step_4.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 4</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+—Burgers 方程，带有锯齿 IC 和周期性 BC（附带 Sympy 简介）。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/06_Array_Operations_with_NumPy.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 NumPy 进行数组运算</font></font></a></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/07_Step_5.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 5</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— 使用平方函数 IC 和适当的 BC 进行二维线性对流。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/08_Step_6.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 6</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— 使用相同的 IC/BC，</font><font style="vertical-align: inherit;">二维</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">非线性对流。</font></font></em><font style="vertical-align: inherit;"></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/09_Step_7.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 7</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— 使用相同的 IC/BC，</font><font style="vertical-align: inherit;">进行 2D</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩散。</font></font></em><font style="vertical-align: inherit;"></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/10_Step_8.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 8</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— 二维伯格斯方程</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/11_Defining_Function_in_Python.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Python 中定义函数</font></font></a></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/12_Step_9.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 9</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— IC 为零且具有 Neumann 和 Dirichlet BC 的拉普拉斯方程。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/13_Step_10.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 10</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— 二维泊松方程。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/14_Step_11.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 11</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+- 求解 2D 腔流的纳维-斯托克斯方程。</font></font></li>
+<li><a href="http://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/15_Step_12.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤 12</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+— 求解 2D 通道流的纳维-斯托克斯方程。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖关系</font></font></h2><a id="user-content-dependencies" class="anchor" aria-label="永久链接：依赖关系" href="#dependencies"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要使用这些课程，您需要 Python 3 和科学 Python 的标准堆栈：NumPy、Matplotlib、SciPy、Sympy。当然，您需要</font></font><a href="http://jupyter.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jupyter——</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一种在网络浏览器上运行的交互式计算环境。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本迷你课程是作为一组</font></font><a href="https://jupyter-notebook.readthedocs.org/en/latest/notebook.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jupyter 笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建的，其中包含有关 Python 代码的书面材料和解决方案。为了使用这些材料，我们建议您用一个全新的笔记本开始每节课，然后按照步骤输入每一行代码（不要复制粘贴！），并通过更改参数进行探索并看看会发生什么。</font></font></p>
 <details>
-  <summary> Installing via Anaconda </summary>
-  <br>
-We *highly* recommend that you install the [Anaconda Python Distribution](http://docs.continuum.io/anaconda/install). It will make your life so much easier. 
-You can download and install Anaconda on Windows, OSX and Linux. 
-
-After installing, to ensure that your packages are up to date, run the following commands in a terminal:
-
-```Bash
-conda update conda
-conda update jupyter numpy sympy scipy matplotlib
-```
-
-If you prefer Miniconda (a mini version of Anaconda that saves you disk space), install all the necessary libraries to follow this course by running the following commands in a terminal:
-
-```Bash
-conda update conda
+  <summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 Anaconda 安装</font></font></summary>
+  <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+我们*强烈*建议您安装 [Anaconda Python Distribution]( </font></font><a href="http://docs.continuum.io/anaconda/install" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://docs.continuum.io/anaconda/install</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)。它会让你的生活变得更加轻松。您可以在 Windows、OSX 和 Linux 上下载并安装 Anaconda。 
+</font></font><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装后，为确保您的软件包是最新的，请在终端中运行以下命令：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>conda update conda
+conda update jupyter numpy sympy scipy matplotlib</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="conda update conda
+conda update jupyter numpy sympy scipy matplotlib" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您更喜欢 Miniconda（Anaconda 的迷你版本，可以节省磁盘空间），请通过在终端中运行以下命令来安装所有必要的库来学习本课程：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>conda update conda
 conda install jupyter
-conda install numpy scipy sympy matplotlib
-```
+conda install numpy scipy sympy matplotlib</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="conda update conda
+conda install jupyter
+conda install numpy scipy sympy matplotlib" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </details>
-
 <details>
-  <summary> Without Anaconda </summary>
-  <br>
-If you already have Python installed on your machine, you can install Jupyter using pip:
-
-```Bash
-pip install jupyter
-```
-
-Please also make sure that you have the necessary libraries installed by running
-
-```Bash
-pip install numpy scipy sympy matplotlib
-```
+  <summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">没有蟒蛇</font></font></summary>
+  <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+如果您的计算机上已经安装了 Python，则可以使用 pip 安装 Jupyter：
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip install jupyter</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install jupyter" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">另请确保您已通过运行安装了必要的库</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip install numpy scipy sympy matplotlib</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install numpy scipy sympy matplotlib" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </details>
-
-
-
-## How to contribute to CFD Python
-
-We accept contributions via pull request—in fact, several users have already submitted pull requests making corrections or small improvements. You can also open an issue if you find a bug, or have a suggestion. 
-
-## Copyright and License
-
-(c) 2017 Lorena A. Barba, Gilbert F. Forsyth. All content is under Creative Commons Attribution [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.txt), and all [code is under BSD-3 clause](https://github.com/engineersCode/EngComp/blob/master/LICENSE) (previously under MIT, and changed on March 8, 2018). 
-
-We are happy if you re-use the content in any way!
-
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何为 CFD Python 做出贡献</font></font></h2><a id="user-content-how-to-contribute-to-cfd-python" class="anchor" aria-label="永久链接：如何为 CFD Python 做出贡献" href="#how-to-contribute-to-cfd-python"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们通过拉取请求接受贡献——事实上，一些用户已经提交了拉取请求，进行了更正或小的改进。如果您发现错误或有建议，也可以提出问题。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版权和许可</font></font></h2><a id="user-content-copyright-and-license" class="anchor" aria-label="永久链接：版权和许可" href="#copyright-and-license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(c) 2017 年洛雷娜·A·巴尔巴、吉尔伯特·F·福赛思。所有内容均受知识共享归属</font></font><a href="https://creativecommons.org/licenses/by/4.0/legalcode.txt" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CC-BY 4.0</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">约束，所有</font></font><a href="https://github.com/engineersCode/EngComp/blob/master/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码均受 BSD-3 条款约束</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（之前受 MIT 约束，于 2018 年 3 月 8 日更改）。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您以任何方式重复使用这些内容，我们会很高兴！</font></font></p>
+<p dir="auto"><a href="https://opensource.org/licenses/BSD-3-Clause" rel="nofollow"><img src="https://camo.githubusercontent.com/aa27bfae9200ad81b9c64e82edafa3aef061e2b59e4089eb0841297d510d5db9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d425344253230332d2d436c617573652d626c75652e737667" alt="执照" data-canonical-src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" style="max-width: 100%;"></a> <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow"><img src="https://camo.githubusercontent.com/adf0103ea2c012b7138ad466a304c6d3cf5ad765d864780c2f8ec8c8d0f8c7c7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d43432532304259253230342e302d6c69676874677265792e737667" alt="许可证：CC BY 4.0" data-canonical-src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="max-width: 100%;"></a></p>
+</article></div>
